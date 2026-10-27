@@ -8225,7 +8225,7 @@ main a:not(.button):not(.nav-enquire) {
     linear-gradient(rgba(10, 10, 10, .32), rgba(10, 10, 10, .32)),
     url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png");
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
   filter: brightness(.82);
 }
 
