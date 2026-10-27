@@ -8272,11 +8272,24 @@ main a:not(.button):not(.nav-enquire) {
 .about-route .parampara-section--animated .parampara-background::after {
   background: linear-gradient(
     90deg,
-    rgba(47, 22, 14, .72) 0%,
-    rgba(76, 34, 19, .48) 24%,
-    rgba(103, 48, 24, .34) 50%,
-    rgba(76, 34, 19, .48) 76%,
-    rgba(47, 22, 14, .72) 100%
+    rgba(47, 22, 14, .82) 0%,
+    rgba(76, 34, 19, .60) 24%,
+    rgba(103, 48, 24, .46) 50%,
+    rgba(76, 34, 19, .60) 76%,
+    rgba(47, 22, 14, .82) 100%
   ) !important;
+}
+
+.about-route .guru-profile {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(47, 22, 14, .82) 0%,
+      rgba(76, 34, 19, .60) 24%,
+      rgba(103, 48, 24, .46) 50%,
+      rgba(76, 34, 19, .60) 76%,
+      rgba(47, 22, 14, .82) 100%
+    ),
+    var(--heritage-architecture) center / cover no-repeat !important;
 }
 
