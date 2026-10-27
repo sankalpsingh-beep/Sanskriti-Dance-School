@@ -8204,6 +8204,12 @@ main a:not(.button):not(.nav-enquire) {
   border-bottom-width: 1px !important;
 }
 
+.about-route > .page-intro {
+  background:
+    linear-gradient(rgba(57, 15, 11, .78), rgba(57, 15, 11, .78)),
+    url("./assets/images/Cinematic Indian Temple Rangoli Hall.png") center 45% / cover no-repeat;
+}
+
 .rajathapatha-page > section + section {
   border-top: 1px solid rgba(198, 154, 85, .42);
 }
