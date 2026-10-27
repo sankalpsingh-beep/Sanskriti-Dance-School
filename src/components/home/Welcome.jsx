@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import useHomeSectionEntrance from "../../hooks/useHomeSectionEntrance";
 import namasteImage from "../../assets/images/Bharatanatyam Dancer in a Stone Temple.png";
-import templeCorridorBackground from "../../assets/images/Golden Light in an Ancient Temple Corridor.png";
+import templeCorridorBackground from "../../assets/images/Golden Temple Corridor at Dawn.png";
 
 export default function Welcome() {
   const { sectionRef, stage, motionClass } = useHomeSectionEntrance();
