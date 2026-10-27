@@ -8220,21 +8220,17 @@ main a:not(.button):not(.nav-enquire) {
     url("./assets/images/Rajathapatha Thought Behind It Background v2.png") !important;
 }
 
-.home-page > .courses-preview::before {
-  background-image:
+.home-page > .courses-preview::before,
+.home-page > .festival-cinematic::before {
+  inset: 0;
+  opacity: 1;
+  background:
     linear-gradient(rgba(10, 10, 10, .32), rgba(10, 10, 10, .32)),
-    url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png");
-  background-position: center;
-  background-size: 100% 100%;
+    url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") center / 100% 100% no-repeat;
   filter: brightness(.82);
 }
 
 .home-page > .festival-cinematic {
-  background-image:
-    linear-gradient(rgba(10, 10, 10, .32), rgba(10, 10, 10, .32)),
-    url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") !important;
-  background-position: center !important;
-  background-size: 100% 100% !important;
-  background-repeat: no-repeat !important;
+  background: #1b1b1b !important;
 }
 
