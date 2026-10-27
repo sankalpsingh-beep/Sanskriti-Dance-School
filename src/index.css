@@ -8234,3 +8234,21 @@ main a:not(.button):not(.nav-enquire) {
   background: #1b1b1b !important;
 }
 
+.home-page > .community-section {
+  background-color: #54240f !important;
+}
+
+.home-page > .community-section::before {
+  background: linear-gradient(
+    90deg,
+    rgba(72, 28, 11, .84) 0%,
+    rgba(91, 38, 14, .7) 38%,
+    rgba(91, 38, 14, .5) 70%,
+    rgba(55, 21, 9, .76) 100%
+  );
+}
+
+.home-page > .community-section .community-background-video {
+  filter: brightness(.78) contrast(1.05) saturate(.88) sepia(.18) !important;
+}
+
