@@ -8293,3 +8293,16 @@ main a:not(.button):not(.nav-enquire) {
     url("./assets/images/Golden Temple Hall of Lineage.png") center / cover no-repeat !important;
 }
 
+.about-route .about-learning-section {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(12, 12, 12, .72) 0%,
+      rgba(18, 17, 16, .54) 24%,
+      rgba(20, 19, 18, .40) 50%,
+      rgba(18, 17, 16, .54) 76%,
+      rgba(12, 12, 12, .72) 100%
+    ),
+    url("./assets/images/WhatsApp Image 2026-10-19 at 17.12.37.jpeg") center / cover no-repeat !important;
+}
+
