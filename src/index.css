@@ -8252,3 +8252,14 @@ main a:not(.button):not(.nav-enquire) {
   filter: brightness(.78) contrast(1.05) saturate(.88) sepia(.18) !important;
 }
 
+.home-page > .home-cta {
+  background:
+    linear-gradient(rgba(22, 13, 9, .42), rgba(22, 13, 9, .42)),
+    url("./assets/images/Ornate Indian Temple Invitation Background.png") center / cover no-repeat !important;
+}
+
+.home-page > .home-cta .cta-box {
+  background: rgba(36, 33, 29, .68) !important;
+  backdrop-filter: blur(2px);
+}
+
