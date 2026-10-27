@@ -8206,7 +8206,7 @@ main a:not(.button):not(.nav-enquire) {
 
 .about-route > .page-intro {
   background:
-    linear-gradient(rgba(57, 15, 11, .78), rgba(57, 15, 11, .78)),
+    linear-gradient(rgba(35, 20, 14, .42), rgba(35, 20, 14, .42)),
     url("./assets/images/Cinematic Indian Temple Rangoli Hall.png") center 45% / cover no-repeat;
 }
 
