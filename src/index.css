@@ -8229,3 +8229,12 @@ main a:not(.button):not(.nav-enquire) {
   filter: brightness(.82);
 }
 
+.home-page > .festival-cinematic {
+  background-image:
+    linear-gradient(rgba(10, 10, 10, .32), rgba(10, 10, 10, .32)),
+    url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") !important;
+  background-position: center !important;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat !important;
+}
+
