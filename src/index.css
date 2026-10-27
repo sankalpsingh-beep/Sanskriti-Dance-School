@@ -8269,3 +8269,14 @@ main a:not(.button):not(.nav-enquire) {
     url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") center / 100% 100% no-repeat !important;
 }
 
+.about-route .parampara-section--animated .parampara-background::after {
+  background: linear-gradient(
+    90deg,
+    rgba(47, 22, 14, .72) 0%,
+    rgba(76, 34, 19, .48) 24%,
+    rgba(103, 48, 24, .34) 50%,
+    rgba(76, 34, 19, .48) 76%,
+    rgba(47, 22, 14, .72) 100%
+  ) !important;
+}
+
