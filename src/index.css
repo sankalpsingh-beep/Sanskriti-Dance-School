@@ -7792,7 +7792,7 @@ main a:not(.button):not(.nav-enquire) {
   background:
     radial-gradient(circle at 0% 50%, transparent 0 82px, rgba(214, 171, 101, .3) 83px 85px, transparent 86px 104px, rgba(214, 171, 101, .2) 105px 107px, transparent 108px 132px, rgba(214, 171, 101, .14) 133px 135px, transparent 136px),
     radial-gradient(circle at 100% 50%, transparent 0 82px, rgba(214, 171, 101, .3) 83px 85px, transparent 86px 104px, rgba(214, 171, 101, .2) 105px 107px, transparent 108px 132px, rgba(214, 171, 101, .14) 133px 135px, transparent 136px),
-    #171614 !important;
+    #3b2116 !important;
 }
 
 .about-route .about-service-section {
