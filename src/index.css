@@ -8284,11 +8284,11 @@ main a:not(.button):not(.nav-enquire) {
   background:
     linear-gradient(
       90deg,
-      rgba(47, 22, 14, .82) 0%,
-      rgba(76, 34, 19, .60) 24%,
-      rgba(103, 48, 24, .46) 50%,
-      rgba(76, 34, 19, .60) 76%,
-      rgba(47, 22, 14, .82) 100%
+      rgba(12, 12, 12, .72) 0%,
+      rgba(18, 17, 16, .54) 24%,
+      rgba(20, 19, 18, .40) 50%,
+      rgba(18, 17, 16, .54) 76%,
+      rgba(12, 12, 12, .72) 100%
     ),
     url("./assets/images/Golden Temple Hall of Lineage.png") center / cover no-repeat !important;
 }
