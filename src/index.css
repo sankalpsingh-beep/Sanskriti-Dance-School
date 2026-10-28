@@ -8342,3 +8342,16 @@ main > .section {
   text-shadow: 0 2px 12px rgba(0, 0, 0, .62);
 }
 
+.home-page > .community-section {
+  margin-inline: 12px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+@media (max-width: 700px) {
+  .home-page > .community-section {
+    margin-inline: 7px;
+    border-radius: 16px;
+  }
+}
+
