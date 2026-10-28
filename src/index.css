@@ -8328,9 +8328,17 @@ main > .section {
 .home-page > .hero .hero-image-background::before {
   background: linear-gradient(
     90deg,
-    rgba(30, 9, 7, .82) 0%,
-    rgba(30, 9, 7, .58) 42%,
-    rgba(20, 8, 7, .22) 100%
+    rgba(22, 7, 6, .88) 0%,
+    rgba(22, 7, 6, .70) 42%,
+    rgba(18, 7, 6, .38) 100%
   ) !important;
+}
+
+.home-page > .hero .hero-copy h1,
+.home-page > .hero .hero-copy p,
+.home-page > .hero .hero-tradition__eyebrow,
+.home-page > .hero .hero-tradition h2,
+.home-page > .hero .hero-tradition li {
+  text-shadow: 0 2px 12px rgba(0, 0, 0, .62);
 }
 
