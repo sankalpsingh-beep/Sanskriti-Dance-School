@@ -9454,3 +9454,7 @@ main > .section {
   background: none !important;
   filter: none !important;
 }
+
+.home-page > .community-section {
+  background: linear-gradient(120deg, #743318 0%, #91421d 50%, #743318 100%) !important;
+}
