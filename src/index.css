@@ -8319,3 +8319,9 @@ main a:not(.button):not(.nav-enquire) {
     url("./assets/images/Warm Terracotta Festival Arch Background.png") !important;
 }
 
+main > section,
+main > .section {
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+}
+
