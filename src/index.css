@@ -2124,7 +2124,17 @@ img {
 }
 
 .home-page > .welcome {
-  padding-block: clamp(58px, 7vw, 92px);
+  padding-block: clamp(34px, 4vw, 58px);
+}
+
+.home-page .namaste-artwork {
+  width: min(100%, 380px);
+}
+
+.home-page > .welcome .home-story-ornament::after {
+  content: none;
+  display: none;
+  animation: none;
 }
 
 @media (max-width: 767px) {
@@ -3712,8 +3722,8 @@ body {
 .about-route > .page-intro > .container > p:last-child { color: rgba(255, 244, 223, .88); }
 .guru-suchitra-page > .page-intro {
   background:
-    linear-gradient(rgba(57, 15, 11, .78), rgba(57, 15, 11, .78)),
-    var(--heritage-architecture) center 45% / cover no-repeat;
+    linear-gradient(rgba(42, 20, 12, .34), rgba(42, 20, 12, .34)),
+    url("./assets/images/Sepia Temple of Guru and Disciple.png") center 45% / cover no-repeat;
 }
 .guru-suchitra-page > .page-intro .eyebrow { color: #f3d59b; }
 .guru-suchitra-page > .page-intro h1 { color: #fff4df; }
@@ -7518,7 +7528,7 @@ main a:not(.button):not(.nav-enquire) {
 
 .rajathapatha-page .rajathapatha-mural-art {
   background-image:
-    linear-gradient(90deg, rgba(25, 22, 19, .94) 0%, rgba(29, 25, 21, .82) 42%, rgba(25, 22, 19, .24) 76%, rgba(25, 22, 19, .08) 100%),
+    linear-gradient(90deg, rgba(84, 31, 10, .76) 0%, rgba(111, 43, 13, .60) 42%, rgba(104, 39, 11, .34) 76%, rgba(80, 26, 7, .18) 100%),
     url("./assets/images/Rajathapatha Thought Behind It Background v2.png") !important;
   background-position: center, right center !important;
   background-size: 100% 100%, cover !important;
@@ -7821,8 +7831,24 @@ main a:not(.button):not(.nav-enquire) {
 
 .about-route .about-service-section {
   background:
-    linear-gradient(90deg, rgba(0, 0, 0, .86) 0%, rgba(0, 0, 0, .52) 24%, rgba(0, 0, 0, .34) 50%, rgba(0, 0, 0, .52) 76%, rgba(0, 0, 0, .86) 100%),
-    url("./assets/images/Golden Rangoli in a Temple Hall.png") center / cover no-repeat !important;
+    linear-gradient(rgba(35, 11, 5, .48), rgba(35, 11, 5, .48)),
+    url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") center / 100% 100% no-repeat !important;
+}
+
+.about-route .about-service-section .home-display-heading,
+.about-route .about-service-section .about-stages-block h3 {
+  color: #fff5e7;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, .72);
+}
+
+.about-route .about-service-section p:not(.eyebrow) {
+  color: #fff2e1;
+  text-shadow: 0 1px 7px rgba(0, 0, 0, .82);
+}
+
+.about-route .about-service-section .eyebrow {
+  color: #ffd078;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, .75);
 }
 
 .about-route > .home-cta {
@@ -7938,14 +7964,39 @@ main a:not(.button):not(.nav-enquire) {
 
 .guru-suchitra-page .guru-suchitra-honours {
   background:
-    linear-gradient(90deg, rgba(6, 6, 6, .99) 0%, rgba(12, 12, 11, .82) 24%, rgba(15, 14, 13, .54) 50%, rgba(12, 12, 11, .82) 76%, rgba(6, 6, 6, .99) 100%),
+    linear-gradient(90deg, rgba(48, 14, 8, .52), rgba(54, 13, 8, .38) 50%, rgba(48, 14, 8, .52)),
     url("./assets/images/guru-awards-background.png") center / cover no-repeat !important;
 }
 
 .guru-suchitra-page > .guru-suchitra-profile {
   background:
-    linear-gradient(90deg, rgba(8, 8, 8, .88), rgba(14, 13, 12, .82)),
+    linear-gradient(110deg, rgba(70, 25, 8, .52), rgba(91, 31, 8, .38) 52%, rgba(54, 17, 6, .56)),
     url("./assets/images/VMS_5636.JPG") center 42% / cover no-repeat !important;
+}
+
+.guru-suchitra-page .guru-suchitra-intro {
+  position: relative;
+  z-index: 2;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.guru-suchitra-page .guru-suchitra-intro .eyebrow {
+  color: #ffe09a;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, .95), 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.guru-suchitra-page .guru-suchitra-intro h2 {
+  color: #fffaf1;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, .98), 0 0 10px rgba(0, 0, 0, .8);
+}
+
+.guru-suchitra-page .guru-suchitra-intro p:not(.eyebrow) {
+  color: #fff8ee;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, .98), 0 0 6px rgba(0, 0, 0, .8);
 }
 
 .guru-suchitra-page > .guru-suchitra-work {
@@ -8036,9 +8087,7 @@ main a:not(.button):not(.nav-enquire) {
 
 .guru-suchitra-page > .guru-suchitra-training {
   background:
-    radial-gradient(circle at 0% 50%, transparent 0 82px, rgba(214, 171, 101, .3) 83px 85px, transparent 86px 104px, rgba(214, 171, 101, .2) 105px 107px, transparent 108px 132px, rgba(214, 171, 101, .14) 133px 135px, transparent 136px),
-    radial-gradient(circle at 100% 50%, transparent 0 82px, rgba(214, 171, 101, .3) 83px 85px, transparent 86px 104px, rgba(214, 171, 101, .2) 105px 107px, transparent 108px 132px, rgba(214, 171, 101, .14) 133px 135px, transparent 136px),
-    #171614 !important;
+    url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") center / 100% 100% no-repeat !important;
 }
 
 .rajathapatha-page .rajathapatha-further .further-session .rajathapatha-card-content h3 {
@@ -8225,6 +8274,9 @@ main a:not(.button):not(.nav-enquire) {
 }
 
 .rajathapatha-page > .page-intro {
+  background:
+    linear-gradient(rgba(42, 22, 10, .38), rgba(42, 22, 10, .38)),
+    url("./assets/images/Ancient Temple Corridor in Golden Light.png") center 45% / cover no-repeat !important;
   border-bottom-width: 1px !important;
 }
 
@@ -8240,8 +8292,74 @@ main a:not(.button):not(.nav-enquire) {
 
 .rajathapatha-page .rajathapatha-mural-art {
   background-image:
-    linear-gradient(90deg, rgba(8, 8, 8, .94) 0%, rgba(12, 12, 11, .76) 24%, rgba(17, 16, 14, .46) 50%, rgba(12, 12, 11, .76) 76%, rgba(8, 8, 8, .94) 100%),
-    url("./assets/images/Rajathapatha Thought Behind It Background v2.png") !important;
+    linear-gradient(90deg, rgba(12, 12, 12, .78) 0%, rgba(18, 18, 18, .64) 42%, rgba(16, 16, 16, .56) 68%, rgba(12, 12, 12, .74) 100%),
+    url("./assets/images/Sunlit Bharatanatyam Temple Relief.png") !important;
+}
+
+.rajathapatha-page .rajathapatha-steps {
+  background-image:
+    linear-gradient(rgba(38, 20, 12, .22), rgba(38, 20, 12, .22)),
+    url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") !important;
+  background-position: center !important;
+  background-size: 100% 100% !important;
+}
+
+.rajathapatha-page .rajathapatha-further::before {
+  background:
+    linear-gradient(rgba(38, 20, 12, .22), rgba(38, 20, 12, .22)),
+    url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") center / 100% 100% no-repeat !important;
+}
+
+.rajathapatha-page .rajathapatha-destination::before {
+  background:
+    linear-gradient(90deg, rgba(67, 28, 12, .84) 0%, rgba(67, 31, 15, .78) 34%, rgba(105, 43, 15, .48) 68%, rgba(25, 13, 8, .70) 100%),
+    url("./assets/images/Ancient Temple Steps in Golden Light.png") center 42% / cover no-repeat !important;
+  filter: none !important;
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+}
+
+.rajathapatha-page .rajathapatha-destination {
+  margin: 44px clamp(28px, 4vw, 64px) !important;
+  padding-block: clamp(96px, 10vw, 140px) !important;
+  border: 1px solid rgba(210, 157, 83, .55);
+  border-radius: 34px;
+}
+
+.rajathapatha-page .rajathapatha-steps > .container {
+  width: min(1500px, calc(100% - 144px)) !important;
+  max-width: 1500px !important;
+}
+
+.rajathapatha-page .rajathapatha-further > .container > .eyebrow,
+.rajathapatha-page .rajathapatha-further > .container > .home-display-heading,
+.rajathapatha-page .rajathapatha-further > .container > p:not(.eyebrow) {
+  position: relative;
+  left: clamp(24px, 4vw, 60px);
+  top: -22px;
+}
+
+@media (max-width: 700px) {
+  .rajathapatha-page .rajathapatha-destination {
+    margin: 24px 16px !important;
+    padding-block: 78px !important;
+    border-radius: 22px;
+  }
+}
+
+@media (max-width: 850px) {
+  .rajathapatha-page .rajathapatha-steps > .container {
+    width: calc(100% - 40px) !important;
+  }
+
+  .rajathapatha-page .rajathapatha-further > .container > .eyebrow,
+  .rajathapatha-page .rajathapatha-further > .container > .home-display-heading,
+  .rajathapatha-page .rajathapatha-further > .container > p:not(.eyebrow) {
+    left: 18px;
+    top: -16px;
+  }
 }
 
 .home-page > .courses-preview::before,
@@ -8307,20 +8425,58 @@ main a:not(.button):not(.nav-enquire) {
 .about-route .guru-profile {
   background:
     linear-gradient(
-      90deg,
-      rgba(12, 12, 12, .72) 0%,
-      rgba(18, 17, 16, .54) 24%,
-      rgba(20, 19, 18, .40) 50%,
-      rgba(18, 17, 16, .54) 76%,
-      rgba(12, 12, 12, .72) 100%
+      rgba(18, 13, 10, .46),
+      rgba(18, 13, 10, .46)
     ),
-    url("./assets/images/Guru Temple Mandapa Maroon Background.png") center / cover no-repeat !important;
+    url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") center / 100% 100% no-repeat !important;
 }
 
 .about-route .about-learning-section {
-  background:
-    linear-gradient(rgba(18, 13, 10, .46), rgba(18, 13, 10, .46)),
-    url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") center / 100% 100% no-repeat !important;
+  background: url("./assets/images/Guru Temple Mandapa Maroon Background.png") center / cover no-repeat !important;
+}
+
+.about-route .about-learning-section .home-display-heading,
+.about-route .about-learning-section .about-festival-heading {
+  color: #fff5e7;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, .95), 0 0 8px rgba(0, 0, 0, .45);
+}
+
+.about-route .about-learning-section > .container > p:not(.eyebrow),
+.about-route .about-learning-section > .container > .home-section-intro {
+  color: #fff8ee;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.8;
+  text-shadow: 0 1px 9px rgba(0, 0, 0, .98), 0 0 6px rgba(0, 0, 0, .6);
+}
+
+.about-route .about-learning-section > .container > .eyebrow {
+  color: #ffe09a !important;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: .18em;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, .95), 0 0 14px rgba(0, 0, 0, .55);
+}
+
+.about-route .about-learning-section .about-festival-grid .about-arch-card h3 {
+  color: #28170f !important;
+  font-weight: 800 !important;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, .6);
+}
+
+.about-route .about-learning-section .about-festival-grid .about-arch-card p {
+  color: #463020 !important;
+  font-weight: 600 !important;
+  line-height: 1.55;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, .7);
+}
+
+.about-route > .parampara-section .section-heading .eyebrow {
+  color: #ffe09a !important;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: .18em;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, .95), 0 0 14px rgba(0, 0, 0, .55);
 }
 
 .about-route .about-closing-box {
@@ -8382,15 +8538,113 @@ main > .section {
 }
 
 .about-route > .guru-profile {
-  margin: 34px clamp(24px, 3vw, 46px);
+  margin: clamp(48px, 6vw, 88px) clamp(30px, 5vw, 76px);
   border-radius: 30px;
   overflow: hidden;
 }
 
 @media (max-width: 700px) {
   .about-route > .guru-profile {
-    margin: 20px 14px;
+    margin: 36px 20px;
     border-radius: 20px;
+  }
+}
+
+.about-route > .about-rajathapatha-section {
+  margin: 14px clamp(28px, 5vw, 76px);
+  background: transparent !important;
+}
+
+.about-route > .about-rajathapatha-section > .container {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+  overflow: hidden;
+  padding: clamp(36px, 4vw, 60px);
+  border: 1px solid rgba(255, 213, 153, .42);
+  border-radius: 30px;
+  background-color: #a83f0b !important;
+  background-image:
+    radial-gradient(circle at 0% 50%, transparent 0 82px, rgba(255, 220, 155, .52) 83px 85px, transparent 86px 104px, rgba(255, 220, 155, .36) 105px 107px, transparent 108px 132px, rgba(255, 220, 155, .24) 133px 135px, transparent 136px),
+    radial-gradient(circle at 100% 50%, transparent 0 82px, rgba(255, 220, 155, .52) 83px 85px, transparent 86px 104px, rgba(255, 220, 155, .36) 105px 107px, transparent 108px 132px, rgba(255, 220, 155, .24) 133px 135px, transparent 136px),
+    linear-gradient(105deg, #4f1807 0%, #67220a 32%, #762b0b 50%, #67220a 68%, #4f1807 100%) !important;
+}
+
+.about-route > .about-rajathapatha-section .eyebrow {
+  color: #ffd27a;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, .7);
+}
+
+.about-route > .about-rajathapatha-section h2 {
+  color: #fff5e7;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, .6);
+}
+
+.about-route > .about-rajathapatha-section p:not(.eyebrow),
+.about-route > .about-rajathapatha-section .text-link {
+  color: #fff3e3;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, .68);
+}
+
+.about-route > .about-rajathapatha-section .text-link {
+  font-weight: 700;
+}
+
+.guru-suchitra-page > .guru-suchitra-work {
+  margin: clamp(40px, 5vw, 72px) clamp(28px, 5vw, 76px);
+  padding-block: 0;
+  background: transparent !important;
+}
+
+.guru-suchitra-page > .guru-suchitra-work > .guru-suchitra-work-grid {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+  overflow: hidden;
+  padding: clamp(36px, 4vw, 60px);
+  border: 1px solid rgba(255, 213, 153, .42);
+  border-radius: 30px;
+  background-color: #a83f0b !important;
+  background-image:
+    radial-gradient(circle at 0% 50%, transparent 0 82px, rgba(255, 220, 155, .52) 83px 85px, transparent 86px 104px, rgba(255, 220, 155, .36) 105px 107px, transparent 108px 132px, rgba(255, 220, 155, .24) 133px 135px, transparent 136px),
+    radial-gradient(circle at 100% 50%, transparent 0 82px, rgba(255, 220, 155, .52) 83px 85px, transparent 86px 104px, rgba(255, 220, 155, .36) 105px 107px, transparent 108px 132px, rgba(255, 220, 155, .24) 133px 135px, transparent 136px),
+    linear-gradient(105deg, #4f1807 0%, #67220a 32%, #762b0b 50%, #67220a 68%, #4f1807 100%) !important;
+}
+
+.guru-suchitra-work-grid .eyebrow {
+  color: #ffd27a;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, .7);
+}
+
+.guru-suchitra-work-grid h2 {
+  color: #fff5e7;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, .6);
+}
+
+.guru-suchitra-work-grid p:not(.eyebrow) {
+  color: #fff3e3;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, .68);
+}
+
+@media (max-width: 700px) {
+  .about-route > .about-rajathapatha-section {
+    margin: 12px 18px;
+  }
+
+  .about-route > .about-rajathapatha-section > .container {
+    padding: 24px 16px;
+    border-radius: 22px;
+  }
+
+  .guru-suchitra-page > .guru-suchitra-work {
+    margin: 32px 18px;
+  }
+
+  .guru-suchitra-page > .guru-suchitra-work > .guru-suchitra-work-grid {
+    padding: 24px 16px;
+    border-radius: 22px;
   }
 }
 

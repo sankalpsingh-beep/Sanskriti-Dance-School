@@ -12,7 +12,7 @@ export default function Welcome() {
       ref={sectionRef}
       className={`welcome home-story-section section welcome-${stage} ${motionClass}`}
       style={{
-        backgroundImage: `url("${templeCorridorBackground}")`,
+        backgroundImage: `linear-gradient(105deg, rgba(157, 62, 18, .30) 0%, rgba(209, 103, 39, .22) 52%, rgba(135, 44, 12, .32) 100%), url("${templeCorridorBackground}")`,
         backgroundPosition: "center",
         backgroundSize: "cover",
       }}
