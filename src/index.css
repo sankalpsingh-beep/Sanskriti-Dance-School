@@ -8343,14 +8343,16 @@ main > .section {
 }
 
 .home-page > .community-section {
-  margin-inline: 12px;
+  margin: 22px 18px;
+  padding-block: clamp(42px, 5vw, 68px);
   border-radius: 24px;
   overflow: hidden;
 }
 
 @media (max-width: 700px) {
   .home-page > .community-section {
-    margin-inline: 7px;
+    margin: 12px 9px;
+    padding-block: 36px;
     border-radius: 16px;
   }
 }
