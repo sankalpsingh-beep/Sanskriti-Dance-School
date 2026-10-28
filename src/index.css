@@ -8343,7 +8343,7 @@ main > .section {
 }
 
 .home-page > .community-section {
-  margin: 22px 18px;
+  margin: 38px 32px;
   padding-block: clamp(42px, 5vw, 68px);
   border-radius: 24px;
   overflow: hidden;
@@ -8351,7 +8351,7 @@ main > .section {
 
 @media (max-width: 700px) {
   .home-page > .community-section {
-    margin: 12px 9px;
+    margin: 20px 14px;
     padding-block: 36px;
     border-radius: 16px;
   }
