@@ -8523,30 +8523,236 @@ main > .section {
 }
 
 .home-page > .community-section {
-  margin: 64px 56px;
-  padding-block: clamp(42px, 5vw, 68px);
-  border-radius: 24px;
+  width: 100%;
+  margin: 0 !important;
+  padding: clamp(24px, 3.5vw, 52px) clamp(16px, 3vw, 48px);
+  border-radius: 0;
   overflow: hidden;
+}
+
+.home-page > .community-section .community-background-video {
+  display: none !important;
+}
+
+.home-page > .community-section::before {
+  background:
+    linear-gradient(rgba(10, 10, 10, .32), rgba(10, 10, 10, .32)),
+    url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") center / 100% 100% no-repeat !important;
+  filter: brightness(.82);
+}
+
+.home-page > .community-section .community-grid {
+  width: min(1400px, 100%);
+  padding: clamp(34px, 5vw, 68px) clamp(28px, 5vw, 72px);
+  border: 1px solid rgba(203, 151, 83, .5);
+  border-radius: 22px;
+  background: rgba(49, 24, 14, .94);
+  background-image: url("./assets/images/Golden Temple Floral Corner Ornament.png");
+  background-position: right center;
+  background-size: 56% 100%;
+  background-repeat: no-repeat;
+  box-shadow: 0 18px 44px rgba(14, 8, 5, .32);
+}
+
+.home-page > .home-cta {
+  width: 100%;
+  margin: 0 !important;
+  border-radius: 0;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #54240f !important;
+}
+
+.home-page > .home-cta::before {
+  content: "" !important;
+  display: block !important;
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  transform: none !important;
+  background:
+    linear-gradient(rgba(10, 10, 10, .32), rgba(10, 10, 10, .32)),
+    url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") center / 100% 100% no-repeat !important;
+  filter: brightness(.82);
+  pointer-events: none;
+}
+
+.home-page > .home-cta .cta-box {
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 700px) {
   .home-page > .community-section {
-    margin: 32px 22px;
-    padding-block: 36px;
+    padding: 14px;
+    border-radius: 0;
+  }
+
+  .home-page > .community-section .community-grid {
+    padding: 30px 22px;
     border-radius: 16px;
+    background-size: 82% 100%;
   }
 }
 
 .about-route > .guru-profile {
-  margin: clamp(48px, 6vw, 88px) clamp(30px, 5vw, 76px);
-  border-radius: 30px;
+  width: 100%;
+  margin: 0 !important;
+  border-radius: 0;
   overflow: hidden;
+}
+
+.about-route > .guru-profile .guru-profile-grid {
+  width: min(1500px, calc(100% - 96px));
+  max-width: 1500px;
+  margin-inline: auto;
+  padding: clamp(32px, 4vw, 58px) clamp(30px, 5vw, 76px);
+  border: 1px solid rgba(203, 151, 83, .52);
+  border-radius: 26px;
+  background: rgba(45, 25, 16, .94);
+  box-shadow: 0 18px 44px rgba(14, 8, 5, .3);
+}
+
+.about-route > .about-rajathapatha-section {
+  background:
+    linear-gradient(rgba(18, 13, 10, .26), rgba(18, 13, 10, .26)),
+    url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") center / 100% 100% no-repeat !important;
+}
+
+/* Final overrides: keep the feature card comfortably inset and balanced. */
+.about-route > .about-rajathapatha-section > .about-rajathapatha-inner {
+  box-sizing: border-box;
+  width: min(1420px, calc(100% - 96px));
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: clamp(44px, 5vw, 72px) clamp(56px, 6vw, 88px);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(48px, 6vw, 88px);
+  border-radius: 28px;
+  background-color: #672812 !important;
+  background-image:
+    radial-gradient(circle at 0% 50%, transparent 0 92px, rgba(255, 220, 155, .34) 93px 95px, transparent 96px 118px, rgba(255, 220, 155, .2) 119px 121px, transparent 122px),
+    radial-gradient(circle at 100% 50%, transparent 0 92px, rgba(255, 220, 155, .34) 93px 95px, transparent 96px 118px, rgba(255, 220, 155, .2) 119px 121px, transparent 122px),
+    linear-gradient(110deg, #54200f 0%, #6b2b13 50%, #54200f 100%) !important;
+}
+
+.about-route > .about-rajathapatha-section > .about-rajathapatha-inner > div:first-child {
+  padding-left: 12px;
+}
+
+.about-route > .about-rajathapatha-section > .about-rajathapatha-inner h2 {
+  max-width: 560px;
+  font-size: clamp(36px, 3.1vw, 54px);
+  line-height: 1.2;
+}
+
+.about-route > .about-rajathapatha-section > .about-rajathapatha-inner > div:last-child > p {
+  max-width: 560px;
+  line-height: 1.8;
+}
+
+@media (max-width: 850px) {
+  .about-route > .about-rajathapatha-section > .about-rajathapatha-inner {
+    width: calc(100% - 48px);
+    padding: 36px 32px;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-route > .about-rajathapatha-section > .about-rajathapatha-inner {
+    width: calc(100% - 28px);
+    padding: 30px 22px;
+    border-radius: 22px;
+  }
+}
+
+/* Full-bleed ornamental frame around the Rajathapatha card. */
+.about-route > .about-rajathapatha-section {
+  width: 100%;
+  margin: 0 !important;
+  padding: clamp(28px, 4vw, 56px) 0 !important;
+  background:
+    linear-gradient(rgba(18, 13, 10, .2), rgba(18, 13, 10, .2)),
+    url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") center / 100% 100% no-repeat !important;
+}
+
+.about-route > .about-rajathapatha-section > .container {
+  width: calc(100% - clamp(32px, 7vw, 112px));
+  max-width: 1640px;
+  margin-inline: auto;
+  background-color: #80350f !important;
+  background-image:
+    radial-gradient(circle at 0% 50%, transparent 0 82px, rgba(255, 220, 155, .52) 83px 85px, transparent 86px 104px, rgba(255, 220, 155, .36) 105px 107px, transparent 108px 132px, rgba(255, 220, 155, .24) 133px 135px, transparent 136px),
+    radial-gradient(circle at 100% 50%, transparent 0 82px, rgba(255, 220, 155, .52) 83px 85px, transparent 86px 104px, rgba(255, 220, 155, .36) 105px 107px, transparent 108px 132px, rgba(255, 220, 155, .24) 133px 135px, transparent 136px),
+    linear-gradient(105deg, #63270d 0%, #83360f 32%, #984313 50%, #83360f 68%, #63270d 100%) !important;
+}
+
+@media (max-width: 700px) {
+  .about-route > .about-rajathapatha-section {
+    padding-block: 20px !important;
+  }
+
+  .about-route > .about-rajathapatha-section > .container {
+    width: calc(100% - 32px);
+  }
+}
+
+/* Refine the Rajathapatha feature card proportions and reading space. */
+.about-route > .about-rajathapatha-section > .about-rajathapatha-inner {
+  width: calc(100% - clamp(64px, 10vw, 176px));
+  max-width: 1500px;
+  margin-inline: auto;
+  padding: clamp(42px, 5vw, 72px) clamp(54px, 6vw, 92px);
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+  gap: clamp(48px, 6vw, 96px);
+  border-radius: 28px;
+  background-color: #713015 !important;
+  background-image:
+    radial-gradient(circle at 0% 50%, transparent 0 82px, rgba(255, 220, 155, .42) 83px 85px, transparent 86px 104px, rgba(255, 220, 155, .29) 105px 107px, transparent 108px 132px, rgba(255, 220, 155, .2) 133px 135px, transparent 136px),
+    radial-gradient(circle at 100% 50%, transparent 0 82px, rgba(255, 220, 155, .42) 83px 85px, transparent 86px 104px, rgba(255, 220, 155, .29) 105px 107px, transparent 108px 132px, rgba(255, 220, 155, .2) 133px 135px, transparent 136px),
+    linear-gradient(105deg, #55200f 0%, #6a2a12 34%, #783317 50%, #6a2a12 66%, #55200f 100%) !important;
+}
+
+.about-route > .about-rajathapatha-section > .about-rajathapatha-inner h2 {
+  max-width: 620px;
+  font-size: clamp(36px, 3.2vw, 58px);
+  line-height: 1.18;
+}
+
+.about-route > .about-rajathapatha-section > .about-rajathapatha-inner > div:last-child > p {
+  max-width: 620px;
+  line-height: 1.8;
+}
+
+@media (max-width: 850px) {
+  .about-route > .about-rajathapatha-section > .about-rajathapatha-inner {
+    width: calc(100% - 40px);
+    padding: 36px 30px;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-route > .about-rajathapatha-section > .about-rajathapatha-inner {
+    width: calc(100% - 28px);
+    padding: 30px 22px;
+    border-radius: 22px;
+  }
 }
 
 @media (max-width: 700px) {
   .about-route > .guru-profile {
-    margin: 36px 20px;
-    border-radius: 20px;
+    margin: 0 !important;
+    border-radius: 0;
+  }
+
+  .about-route > .guru-profile .guru-profile-grid {
+    width: calc(100% - 32px);
+    padding: 28px 22px;
+    border-radius: 18px;
   }
 }
 
@@ -8648,3 +8854,603 @@ main > .section {
   }
 }
 
+.about-route > .about-rajathapatha-section {
+  background:
+    linear-gradient(rgba(18, 13, 10, .26), rgba(18, 13, 10, .26)),
+    url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") center / 100% 100% no-repeat !important;
+}
+
+
+/* Last-in-file sizing override for the About page Rajathapatha feature. */
+.about-route > .about-rajathapatha-section > .about-rajathapatha-inner {
+  box-sizing: border-box;
+  width: min(1420px, calc(100% - 96px));
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: clamp(44px, 5vw, 72px) clamp(56px, 6vw, 88px);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(48px, 6vw, 88px);
+  border-radius: 28px;
+  background-color: #672812 !important;
+  background-image:
+    radial-gradient(circle at 0% 50%, transparent 0 92px, rgba(255, 220, 155, .34) 93px 95px, transparent 96px 118px, rgba(255, 220, 155, .2) 119px 121px, transparent 122px),
+    radial-gradient(circle at 100% 50%, transparent 0 92px, rgba(255, 220, 155, .34) 93px 95px, transparent 96px 118px, rgba(255, 220, 155, .2) 119px 121px, transparent 122px),
+    linear-gradient(110deg, #54200f 0%, #6b2b13 50%, #54200f 100%) !important;
+}
+
+.about-route > .about-rajathapatha-section > .about-rajathapatha-inner > div:first-child { padding-left: 12px; }
+.about-route > .about-rajathapatha-section > .about-rajathapatha-inner h2 { max-width: 560px; font-size: clamp(36px, 3.1vw, 54px); line-height: 1.2; }
+.about-route > .about-rajathapatha-section > .about-rajathapatha-inner > div:last-child > p { max-width: 560px; line-height: 1.8; }
+
+@media (max-width: 850px) {
+  .about-route > .about-rajathapatha-section > .about-rajathapatha-inner {
+    width: calc(100% - 48px);
+    padding: 36px 32px;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-route > .about-rajathapatha-section > .about-rajathapatha-inner {
+    width: calc(100% - 28px);
+    padding: 30px 22px;
+    border-radius: 22px;
+  }
+}
+
+/* Compact Rajathapatha card sizing. */
+.about-route > .about-rajathapatha-section > .about-rajathapatha-inner {
+  width: min(1180px, calc(100% - 112px));
+  max-width: 1180px;
+  padding: 38px 62px;
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+  gap: 48px;
+  border-radius: 24px;
+}
+
+.about-route > .about-rajathapatha-section > .about-rajathapatha-inner h2 {
+  max-width: 470px;
+  font-size: clamp(34px, 2.8vw, 48px);
+  line-height: 1.16;
+}
+
+.about-route > .about-rajathapatha-section > .about-rajathapatha-inner > div:last-child > p {
+  max-width: 500px;
+  line-height: 1.65;
+}
+
+@media (max-width: 850px) {
+  .about-route > .about-rajathapatha-section > .about-rajathapatha-inner {
+    width: calc(100% - 48px);
+    padding: 32px 28px;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-route > .about-rajathapatha-section > .about-rajathapatha-inner {
+    width: calc(100% - 28px);
+    padding: 26px 20px;
+  }
+}
+
+/* Richer, quieter burnt-terracotta fill for the Rajathapatha card. */
+.about-route > .about-rajathapatha-section > .about-rajathapatha-inner {
+  background-color: #572719 !important;
+  background-image:
+    radial-gradient(circle at 0% 50%, transparent 0 92px, rgba(231, 185, 122, .26) 93px 95px, transparent 96px 118px, rgba(231, 185, 122, .15) 119px 121px, transparent 122px),
+    radial-gradient(circle at 100% 50%, transparent 0 92px, rgba(231, 185, 122, .26) 93px 95px, transparent 96px 118px, rgba(231, 185, 122, .15) 119px 121px, transparent 122px),
+    linear-gradient(110deg, #492116 0%, #602719 50%, #492116 100%) !important;
+}
+
+/* Match the navbar Sanskriti wordmark to the footer brand gold. */
+.nav-logo-wordmark {
+  color: #d2a75f !important;
+}
+.nav-logo-subtitle {
+  color: #d2a75f !important;
+}
+
+/* Terracotta artwork for the About page Learning & Performance section. */
+.about-route > .about-learning-section {
+  background:
+    linear-gradient(rgba(36, 15, 7, .34), rgba(36, 15, 7, .34)),
+    url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") center / cover no-repeat !important;
+}
+
+/* Keep the artwork's gold side borders visible on Learning & Performance. */
+.about-route > .about-learning-section {
+  background-image:
+    linear-gradient(rgba(36, 15, 7, .14), rgba(36, 15, 7, .14)),
+    url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") !important;
+  background-size: 100% 100%, 100% 100% !important;
+  background-position: center, center !important;
+  background-repeat: no-repeat, no-repeat !important;
+}
+
+/* Match the Learning section tint to the neighboring terracotta section. */
+.about-route > .about-learning-section {
+  background-image:
+    linear-gradient(rgba(18, 13, 10, .26), rgba(18, 13, 10, .26)),
+    url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") !important;
+  background-size: 100% 100%, 100% 100% !important;
+  background-position: center, center !important;
+  background-repeat: no-repeat, no-repeat !important;
+}
+
+/* Reuse the Terracotta ornamental backdrop for the closing invitation. */
+.about-route > .home-cta {
+  background-image:
+    linear-gradient(rgba(18, 13, 10, .26), rgba(18, 13, 10, .26)),
+    url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") !important;
+  background-size: 100% 100%, 100% 100% !important;
+  background-position: center, center !important;
+  background-repeat: no-repeat, no-repeat !important;
+}
+
+/* Share the Terracotta ornamental artwork with the About story section. */
+.about-route > .about-story-section {
+  background-image:
+    linear-gradient(rgba(18, 13, 10, .26), rgba(18, 13, 10, .26)),
+    url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") !important;
+  background-size: 100% 100%, 100% 100% !important;
+  background-position: center, center !important;
+  background-repeat: no-repeat, no-repeat !important;
+}
+
+/* Use the shared Terracotta artwork on the About page hero (PageIntro). */
+.about-route > .page-intro {
+  background:
+    linear-gradient(rgba(18, 13, 10, .26), rgba(18, 13, 10, .26)),
+    url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") center / 100% 100% no-repeat !important;
+}
+
+/* Nataraja artwork and left-aligned copy on the About page hero. */
+.about-route > .page-intro {
+  background:
+    linear-gradient(rgba(18, 13, 10, .26), rgba(18, 13, 10, .26)),
+    url("./assets/images/Golden Nataraja Cosmic Dance Statue.png") right 4% center / auto 90% no-repeat,
+    url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") center / 100% 100% no-repeat !important;
+}
+
+.about-route > .page-intro > .container {
+  width: min(860px, calc(100% - 48px));
+  max-width: 860px;
+  margin-left: clamp(48px, 11vw, 190px);
+  margin-right: auto;
+  text-align: left;
+}
+
+@media (max-width: 700px) {
+  .about-route > .page-intro {
+    background:
+      linear-gradient(rgba(18, 13, 10, .4), rgba(18, 13, 10, .4)),
+      url("./assets/images/Golden Nataraja Cosmic Dance Statue.png") right -12% center / auto 72% no-repeat,
+      url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") center / 100% 100% no-repeat !important;
+  }
+
+  .about-route > .page-intro > .container {
+    width: calc(100% - 48px);
+    margin-inline: 24px auto;
+  }
+}
+
+/* Terracotta ornamental backdrop for the Guru page hero. */
+.guru-suchitra-page > .page-intro {
+  background:
+    linear-gradient(rgba(18, 13, 10, .26), rgba(18, 13, 10, .26)),
+    url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") center / 100% 100% no-repeat !important;
+}
+
+/* Puja still life on the right of the Guru hero; keep its copy left-aligned. */
+.guru-suchitra-page > .page-intro {
+  background:
+    linear-gradient(rgba(18, 13, 10, .22), rgba(18, 13, 10, .22)),
+    url("./assets/images/Indian Puja Still Life with Glowing Lamps.png") right 3% center / auto 86% no-repeat,
+    url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") center / 100% 100% no-repeat !important;
+}
+
+.guru-suchitra-page > .page-intro > .container {
+  width: min(880px, calc(100% - 48px));
+  max-width: 880px;
+  margin-left: clamp(48px, 11vw, 190px);
+  margin-right: auto;
+  text-align: left;
+}
+
+@media (max-width: 700px) {
+  .guru-suchitra-page > .page-intro {
+    background:
+      linear-gradient(rgba(18, 13, 10, .38), rgba(18, 13, 10, .38)),
+      url("./assets/images/Indian Puja Still Life with Glowing Lamps.png") right -18% center / auto 62% no-repeat,
+      url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") center / 100% 100% no-repeat !important;
+  }
+
+  .guru-suchitra-page > .page-intro > .container {
+    width: calc(100% - 48px);
+    margin-inline: 24px auto;
+  }
+}
+
+/* Rounded edge treatment for the Guru profile section. */
+.guru-suchitra-page > .guru-suchitra-profile {
+  margin-inline: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(218, 166, 88, .55);
+  border-radius: 28px;
+}
+
+@media (max-width: 700px) {
+  .guru-suchitra-page > .guru-suchitra-profile {
+    margin-inline: 8px;
+    border-radius: 20px;
+  }
+}
+
+/* Warm black-to-orange frame in the spacing around the Guru profile section. */
+.guru-suchitra-page {
+  background: linear-gradient(135deg, #151311 0%, #21150f 48%, #71300f 100%);
+}
+
+.guru-suchitra-page > .guru-suchitra-profile {
+  margin: 18px;
+}
+
+@media (max-width: 700px) {
+  .guru-suchitra-page > .guru-suchitra-profile {
+    margin: 10px;
+  }
+}
+
+/* Replace near-black side gutters with a warm terracotta frame. */
+.guru-suchitra-page {
+  background: linear-gradient(90deg, #783719 0%, #9a4a22 50%, #783719 100%) !important;
+}
+
+/* Terracotta frame outside the Study & Stage card. */
+.guru-suchitra-page > .guru-suchitra-work {
+  width: 100%;
+  margin: 0;
+  padding: clamp(32px, 4vw, 60px) 0;
+  background:
+    linear-gradient(rgba(18, 13, 10, .22), rgba(18, 13, 10, .22)),
+    url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") center / 100% 100% no-repeat !important;
+}
+
+.guru-suchitra-page > .guru-suchitra-work > .guru-suchitra-work-grid {
+  box-sizing: border-box;
+  width: min(1600px, calc(100% - clamp(48px, 10vw, 160px)));
+  max-width: 1600px;
+  margin-inline: auto;
+}
+
+@media (max-width: 700px) {
+  .guru-suchitra-page > .guru-suchitra-work {
+    padding-block: 24px;
+  }
+
+  .guru-suchitra-page > .guru-suchitra-work > .guru-suchitra-work-grid {
+    width: calc(100% - 32px);
+  }
+}
+
+/* Warm chocolate-brown fill for the Study & Stage card interior. */
+.guru-suchitra-page > .guru-suchitra-work > .guru-suchitra-work-grid {
+  background-color: #38251d !important;
+  background-image:
+    radial-gradient(circle at 0% 50%, transparent 0 92px, rgba(231, 185, 122, .32) 93px 95px, transparent 96px 118px, rgba(231, 185, 122, .18) 119px 121px, transparent 122px),
+    radial-gradient(circle at 100% 50%, transparent 0 92px, rgba(231, 185, 122, .32) 93px 95px, transparent 96px 118px, rgba(231, 185, 122, .18) 119px 121px, transparent 122px),
+    linear-gradient(110deg, #2d201a 0%, #40271d 50%, #2d201a 100%) !important;
+}
+
+/* Terracotta ornamental background behind the Guru recognition cards. */
+.guru-suchitra-page > .guru-suchitra-honours {
+  background:
+    linear-gradient(rgba(18, 13, 10, .24), rgba(18, 13, 10, .24)),
+    url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") center / 100% 100% no-repeat !important;
+}
+
+/* Decorative Bharatanatyam trophy at the lower-left of Recognition. */
+.guru-suchitra-page > .guru-suchitra-honours {
+  position: relative;
+  isolation: isolate;
+}
+
+.guru-suchitra-page > .guru-suchitra-honours::before {
+  position: absolute;
+  z-index: 0;
+  left: clamp(12px, 3vw, 48px);
+  bottom: 0;
+  width: clamp(170px, 20vw, 320px);
+  height: 68%;
+  background: url("./assets/images/Ornate Golden Bharatanatyam Dancer Trophy.png") left bottom / contain no-repeat;
+  content: "";
+  opacity: .68;
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+.guru-suchitra-page > .guru-suchitra-honours > .container {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 700px) {
+  .guru-suchitra-page > .guru-suchitra-honours::before {
+    left: 0;
+    width: 132px;
+    height: 42%;
+    opacity: .42;
+  }
+}
+
+/* Golden Dancer Medal accent in the upper-right of Recognition. */
+.guru-suchitra-page > .guru-suchitra-honours::after {
+  position: absolute;
+  z-index: 0;
+  top: clamp(18px, 3vw, 42px);
+  right: clamp(18px, 4vw, 64px);
+  width: clamp(110px, 14vw, 210px);
+  aspect-ratio: 1;
+  background: url("./assets/images/Ornate Golden Dancer Medal.png") center / contain no-repeat;
+  content: "";
+  opacity: .72;
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+@media (max-width: 700px) {
+  .guru-suchitra-page > .guru-suchitra-honours::after {
+    top: 12px;
+    right: 12px;
+    width: 88px;
+    opacity: .5;
+  }
+}
+
+.guru-suchitra-page > .guru-suchitra-honours::after {
+  width: clamp(160px, 20vw, 300px);
+  top: clamp(12px, 2vw, 28px);
+  right: clamp(12px, 3vw, 44px);
+}
+
+@media (max-width: 700px) {
+  .guru-suchitra-page > .guru-suchitra-honours::after {
+    width: 112px;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+/* Increase visibility of the Recognition trophy and medal artwork. */
+.guru-suchitra-page > .guru-suchitra-honours::before {
+  width: clamp(220px, 24vw, 380px);
+  opacity: .96;
+  filter: brightness(1.12) saturate(1.22) contrast(1.1);
+}
+
+.guru-suchitra-page > .guru-suchitra-honours::after {
+  width: clamp(200px, 23vw, 350px);
+  opacity: .96;
+  filter: brightness(1.12) saturate(1.22) contrast(1.1);
+}
+
+@media (max-width: 700px) {
+  .guru-suchitra-page > .guru-suchitra-honours::before {
+    width: 150px;
+    opacity: .76;
+  }
+
+  .guru-suchitra-page > .guru-suchitra-honours::after {
+    width: 126px;
+    opacity: .76;
+  }
+}
+
+/* Terracotta ornamental background for the Rajathapatha hero. */
+.rajathapatha-page > .page-intro {
+  background:
+    linear-gradient(rgba(18, 13, 10, .26), rgba(18, 13, 10, .26)),
+    url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") center / 100% 100% no-repeat !important;
+}
+
+/* Deity sculpture detail and left-shifted copy in the Rajathapatha hero. */
+.rajathapatha-page > .page-intro {
+  position: relative;
+  overflow: hidden;
+}
+
+.rajathapatha-page > .page-intro::after {
+  position: absolute;
+  z-index: 0;
+  right: clamp(20px, 5vw, 84px);
+  bottom: 0;
+  width: min(31vw, 440px);
+  height: 94%;
+  background: url("./assets/images/Ornate Sandstone Temple Deity Sculpture.png") right bottom / contain no-repeat;
+  content: "";
+  opacity: .84;
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+.rajathapatha-page > .page-intro > .container {
+  position: relative;
+  z-index: 1;
+  width: min(960px, calc(100% - 48px));
+  max-width: 960px;
+  margin-left: clamp(48px, 10vw, 170px);
+  margin-right: auto;
+  text-align: left;
+}
+
+@media (max-width: 700px) {
+  .rajathapatha-page > .page-intro::after {
+    right: -22px;
+    width: 48vw;
+    height: 72%;
+    opacity: .48;
+  }
+
+  .rajathapatha-page > .page-intro > .container {
+    width: calc(100% - 40px);
+    margin-inline: 20px auto;
+  }
+}
+
+/* Reverse the Rajathapatha hero composition: sculpture left, copy right. */
+.rajathapatha-page > .page-intro::after {
+  right: auto;
+  left: clamp(0px, 2vw, 32px);
+  width: min(34vw, 480px);
+  background-position: left bottom;
+}
+
+.rajathapatha-page > .page-intro > .container {
+  margin-left: clamp(440px, 43vw, 760px);
+  margin-right: clamp(32px, 6vw, 100px);
+}
+
+@media (max-width: 700px) {
+  .rajathapatha-page > .page-intro::after {
+    left: -24px;
+    right: auto;
+    width: 42vw;
+    opacity: .38;
+  }
+
+  .rajathapatha-page > .page-intro > .container {
+    width: calc(100% - 40px);
+    margin-left: clamp(120px, 34vw, 220px);
+    margin-right: 20px;
+  }
+}
+
+.rajathapatha-page > .page-intro > .container {
+  margin-left: clamp(360px, 35vw, 640px);
+  margin-right: clamp(28px, 5vw, 80px);
+}
+
+@media (max-width: 700px) {
+  .rajathapatha-page > .page-intro > .container {
+    margin-left: clamp(100px, 26vw, 170px);
+    margin-right: 20px;
+  }
+}
+
+.rajathapatha-page > .page-intro > .container {
+  margin-left: clamp(300px, 28vw, 520px);
+  margin-right: clamp(28px, 5vw, 80px);
+}
+
+@media (max-width: 700px) {
+  .rajathapatha-page > .page-intro > .container {
+    margin-left: clamp(80px, 20vw, 135px);
+    margin-right: 20px;
+  }
+}
+
+.rajathapatha-page > .page-intro::after {
+  opacity: 1;
+  filter: contrast(1.32) brightness(1.08) saturate(1.12);
+}
+
+@media (max-width: 700px) {
+  .rajathapatha-page > .page-intro::after {
+    opacity: .52;
+    filter: contrast(1.28) brightness(1.06) saturate(1.1);
+  }
+}
+
+/* Rounded, inset frame for the Rajathapatha thought section. */
+.rajathapatha-page {
+  background-color: #5b2a17;
+}
+
+.rajathapatha-page > .rajathapatha-thought {
+  margin: clamp(12px, 2vw, 24px);
+  overflow: hidden;
+  border: 1px solid rgba(221, 169, 99, .56);
+  border-radius: 30px;
+}
+
+@media (max-width: 700px) {
+  .rajathapatha-page > .rajathapatha-thought {
+    margin: 10px;
+    border-radius: 22px;
+  }
+}
+
+.rajathapatha-page > .rajathapatha-thought {
+  margin: clamp(28px, 4vw, 64px);
+}
+
+@media (max-width: 700px) {
+  .rajathapatha-page > .rajathapatha-thought {
+    margin: 20px 14px;
+  }
+}
+
+/* Terracotta background for the animated Rajathapatha closing tribute. */
+.rajathapatha-page > .rajathapatha-closing {
+  background:
+    linear-gradient(rgba(35, 16, 8, .48), rgba(35, 16, 8, .48)),
+    url("./assets/images/Terracotta Temple-Inspired Ornamental Background.png") center / 100% 100% no-repeat !important;
+}
+
+/* Keep the existing mandala animation and ornaments distinct over the artwork. */
+.rajathapatha-page .rajathapatha-closing-mandala {
+  color: #e2b96e !important;
+  opacity: .38 !important;
+}
+
+.rajathapatha-page .rajathapatha-closing-lotus,
+.rajathapatha-page .rajathapatha-closing-divider {
+  color: #e2b96e !important;
+}
+
+.rajathapatha-page .rajathapatha-closing p {
+  color: #fff0d9 !important;
+  text-shadow: 0 2px 12px rgba(25, 10, 4, .72);
+}
+
+/* Match the navbar subtitle to the footer's orange subtitle. */
+.nav-logo-subtitle {
+  color: #ff963d !important;
+}
+
+/* Rounded, inset frame for the About story section. */
+.about-route {
+  background-color: #5b2a17;
+}
+
+.about-route > .about-story-section {
+  margin: clamp(16px, 2.5vw, 36px);
+  overflow: hidden;
+  border: 1px solid rgba(222, 173, 107, .58);
+  border-radius: 30px;
+}
+
+@media (max-width: 700px) {
+  .about-route > .about-story-section {
+    margin: 12px;
+    border-radius: 22px;
+  }
+}
+
+/* Crop the baked-in vertical border strips from the About story backdrop. */
+.about-route > .about-story-section {
+  background-size: 110% 100%, 110% 100% !important;
+  background-position: center, center !important;
+}
+
+/* Keep the Terracotta artwork inside the support card, not beyond its border. */
+.home-page > .community-section {
+  background: #1b1916 !important;
+}
+
+.home-page > .community-section::before {
+  background: none !important;
+  filter: none !important;
+}
