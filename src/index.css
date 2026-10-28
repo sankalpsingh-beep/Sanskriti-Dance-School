@@ -8325,3 +8325,12 @@ main > .section {
   border-bottom: 0 !important;
 }
 
+.home-page > .hero .hero-image-background::before {
+  background: linear-gradient(
+    90deg,
+    rgba(30, 9, 7, .82) 0%,
+    rgba(30, 9, 7, .58) 42%,
+    rgba(20, 8, 7, .22) 100%
+  ) !important;
+}
+
