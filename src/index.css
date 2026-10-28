@@ -8314,7 +8314,7 @@ main a:not(.button):not(.nav-enquire) {
       rgba(18, 17, 16, .54) 76%,
       rgba(12, 12, 12, .72) 100%
     ),
-    url("./assets/images/Golden Temple Hall of Lineage.png") center / cover no-repeat !important;
+    url("./assets/images/Guru Temple Mandapa Maroon Background.png") center / cover no-repeat !important;
 }
 
 .about-route .about-learning-section {
@@ -8378,6 +8378,19 @@ main > .section {
     margin: 32px 22px;
     padding-block: 36px;
     border-radius: 16px;
+  }
+}
+
+.about-route > .guru-profile {
+  margin: 34px clamp(24px, 3vw, 46px);
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+@media (max-width: 700px) {
+  .about-route > .guru-profile {
+    margin: 20px 14px;
+    border-radius: 20px;
   }
 }
 
