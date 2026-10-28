@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import useHomeSectionEntrance from "../../hooks/useHomeSectionEntrance";
 import namasteImage from "../../assets/images/Bharatanatyam Dancer in a Stone Temple.png";
-import templeCorridorBackground from "../../assets/images/Maroon Temple Mandala Heritage Backdrop.png";
+import terracottaOrnamentalBackground from "../../assets/images/Terracotta Temple-Inspired Ornamental Background.png";
 
 export default function Welcome() {
   const { sectionRef, stage, motionClass } = useHomeSectionEntrance();
@@ -12,9 +12,9 @@ export default function Welcome() {
       ref={sectionRef}
       className={`welcome home-story-section section welcome-${stage} ${motionClass}`}
       style={{
-        backgroundImage: `linear-gradient(105deg, rgba(157, 62, 18, .30) 0%, rgba(209, 103, 39, .22) 52%, rgba(135, 44, 12, .32) 100%), url("${templeCorridorBackground}")`,
+        backgroundImage: `linear-gradient(105deg, rgba(29, 15, 10, .48) 0%, rgba(43, 20, 11, .28) 52%, rgba(25, 13, 9, .38) 100%), url("${terracottaOrnamentalBackground}")`,
         backgroundPosition: "center",
-        backgroundSize: "cover",
+        backgroundSize: "100% 100%",
       }}
     >
       <span className="home-story-ornament" aria-hidden="true" />
